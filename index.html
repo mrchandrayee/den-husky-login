@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1c2333">
+  <!-- Primary SEO -->
+  <title>Den — Husky Login | mrchandrayee</title>
+  <meta name="description" content="A beautiful dog-themed login page featuring a husky illustration with eye-following and password-peek animations. Pure HTML/CSS/JS.">
+  <meta name="author" content="mrchandrayee">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mrchandrayee.github.io/den-husky-login/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrchandrayee.github.io/den-husky-login/">
+  <meta property="og:title" content="Den — Husky Login | mrchandrayee">
+  <meta property="og:description" content="A beautiful dog-themed login page featuring a husky illustration with eye-following and password-peek animations. Pure HTML/CSS/JS.">
+  <meta property="og:image" content="https://mrchandrayee.github.io/den-husky-login/preview.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mrchandrayee.github.io/den-husky-login/">
+  <meta name="twitter:title" content="Den — Husky Login | mrchandrayee">
+  <meta name="twitter:description" content="A beautiful dog-themed login page featuring a husky illustration with eye-following and password-peek animations. Pure HTML/CSS/JS.">
+  <meta name="twitter:image" content="https://mrchandrayee.github.io/den-husky-login/preview.png">
+  <meta name="twitter:creator" content="@mrchandrayee">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Den — Husky Login",
+    "description": "A beautiful dog-themed login page featuring a husky illustration with eye-following and password-peek animations. Pure HTML/CSS/JS.",
+    "url": "https://mrchandrayee.github.io/den-husky-login/",
+    "author": { "@type": "Person", "name": "mrchandrayee", "url": "https://github.com/mrchandrayee" },
+    "applicationCategory": "WebApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <meta name="theme-color" content="#10131f">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="traffic"><i></i><i></i><i></i></div>
+    <div class="brandline"><strong>Den</strong><span>—</span><b>HTML</b><em>·</em><b>CSS</b><em>·</em><b>JS</b></div>
+    <div class="location">localhost / den</div>
+  </header>
+
+  <main class="stage">
+    <section class="login-card" aria-label="Den sign in">
+      <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+      <div class="husky" id="husky" aria-hidden="true">
+        <svg viewBox="0 0 240 260" role="img">
+          <defs>
+            <radialGradient id="fur" cx="45%" cy="22%" r="80%"><stop stop-color="#9da8bd"/><stop offset=".55" stop-color="#59657c"/><stop offset="1" stop-color="#31394c"/></radialGradient>
+            <radialGradient id="muzzle" cx="50%" cy="20%" r="90%"><stop stop-color="#fff"/><stop offset="1" stop-color="#dce2ee"/></radialGradient>
+            <linearGradient id="body" x2="0" y2="1"><stop stop-color="#69758c"/><stop offset="1" stop-color="#30394d"/></linearGradient>
+          </defs>
+          <path d="M49 76 34 5Q32 -2 40 4L91 45M149 45 200 4Q208 -2 206 5L191 76" fill="#59657c" stroke="#222a3b" stroke-width="5"/>
+          <path d="m49 57-7-39 34 35M191 57l7-39-34 35" fill="#dce5f7"/>
+          <ellipse cx="120" cy="218" rx="68" ry="42" fill="url(#body)"/>
+          <path d="M91 183Q120 165 149 183L142 244Q120 260 98 244Z" fill="url(#muzzle)"/>
+          <ellipse cx="120" cy="112" rx="89" ry="91" fill="url(#fur)"/>
+          <path d="M48 118Q49 63 91 56L120 83 149 56Q192 65 192 118Q185 190 120 196Q55 190 48 118Z" fill="url(#muzzle)"/>
+          <path d="M57 95Q65 42 117 48L120 91 91 81Q75 84 57 95ZM183 95Q175 42 123 48L120 91 149 81Q165 84 183 95Z" fill="#3d465b"/>
+          <g class="eyes">
+            <ellipse cx="88" cy="111" rx="24" ry="29" fill="#202638"/><ellipse cx="152" cy="111" rx="24" ry="29" fill="#202638"/>
+            <ellipse class="pupil" cx="89" cy="111" rx="10" ry="13" fill="#dce8ff"/><ellipse class="pupil" cx="153" cy="111" rx="10" ry="13" fill="#dce8ff"/>
+            <circle cx="80" cy="99" r="6" fill="white"/><circle cx="144" cy="99" r="6" fill="white"/>
+          </g>
+          <path d="M109 137Q120 126 131 137Q129 151 120 151Q111 151 109 137Z" fill="#202638"/>
+          <path d="M120 150Q120 166 105 166M120 150Q120 166 135 166" fill="none" stroke="#34394a" stroke-width="3" stroke-linecap="round"/>
+          <ellipse cx="58" cy="145" rx="15" ry="8" fill="#f3a98d" opacity=".8"/><ellipse cx="182" cy="145" rx="15" ry="8" fill="#f3a98d" opacity=".8"/>
+          <path class="happy-mouth" d="M105 158Q120 176 135 158" fill="none" stroke="#34394a" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span class="sparkle">✦</span>
+      </div>
+
+      <div class="card-content">
+        <h1>Den</h1>
+        <p class="subtitle">Welcome back. Your husky’s keeping watch.</p>
+        <form id="loginForm">
+          <label class="field">
+            <span>Username</span>
+            <input id="username" name="username" type="text" placeholder="Enter username" autocomplete="username" required>
+          </label>
+          <label class="field password-field">
+            <span>Password</span>
+            <input id="password" name="password" type="password" placeholder="Enter password" autocomplete="current-password" required>
+            <button class="eye" type="button" id="togglePassword" aria-label="Show password">◎</button>
+          </label>
+          <div class="form-options">
+            <label class="remember"><input type="checkbox" id="remember"> <span>Remember me</span></label>
+            <a href="#" id="forgotLink">Forgot password?</a>
+          </div>
+          <button class="signin" id="signin" type="submit">
+            <span class="signin-label">Sign in</span>
+            <span class="door" aria-hidden="true">
+              <span class="door-frame"><span class="door-panel"></span><span class="doorknob"></span></span>
+              <span class="walker"><i></i><b></b><u></u></span>
+            </span>
+          </button>
+          <p class="status" id="status" aria-live="polite"> </p>
+        </form>
+        <div class="separator"><span>or continue with</span></div>
+        <div class="socials">
+          <button type="button" class="social" id="google"><span class="google-mark">G</span>Google</button>
+          <button type="button" class="social" id="apple"><span class="apple-mark">●</span>Apple</button>
+        </div>
+        <p class="signup">New to Den? <a href="#" id="createLink">Create account</a></p>
+      </div>
+    </section>
+  </main>
+
+  <section class="code-dock" aria-label="Code preview">
+    <div><h3>Html</h3><pre><code>&lt;!-- the husky guards --&gt;
+&lt;svg class="fox"&gt;...paws...&lt;/svg&gt;
+
+&lt;!-- Sign in is a door --&gt;
+&lt;button class="btn doorbtn"&gt;
+  &lt;span class="doorbtn__label"&gt;Sign in&lt;/span&gt;
+  &lt;span class="dooric"&gt;
+    &lt;span class="dooric__frame"&gt;...&lt;/span&gt;
+    &lt;span class="dooric__person"&gt;...&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/button&gt;</code></pre></div>
+    <div><h3>CSS</h3><pre><code>/* the door swings open */
+.dooropen .door-panel {
+  transform: rotateY(72deg);
+}
+.dooropen .dooric__glow {
+  opacity: .95;
+}
+/* legs swing, knees bend */
+.walking .walker {
+  animation: thighF .46s linear infinite;
+}
+/* then walk on through */
+.out .walker {
+  transform: translateX(36px);
+  opacity: 0;
+}</code></pre></div>
+    <div><h3>JS</h3><pre><code>// door → walk through → in
+form.onsubmit = async (e) =&gt; {
+  e.preventDefault();
+  btn.classList.add('dooropen');
+  await wait(380);
+  btn.classList.add('walking');
+  btn.classList.add('out');
+  await wait(760);
+  btn.classList.remove('walking', 'dooropen');
+  fox.classList.add('is-happy');
+};</code></pre></div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
