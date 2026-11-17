@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Den — Welcome back</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="browser">
+ <div class="browserbar"><div class="lights"><i></i><i></i><i></i></div><div class="crumb">Den — <b>HTML</b> · <strong>CSS</strong> · <em>JS</em></div><div class="host">localhost / den</div></div>
+ <main class="stage" id="stage">
+  <div class="ambient a1"></div><div class="ambient a2"></div>
+  <section class="login-card" aria-label="Den login form">
+   <div class="mascot" id="mascot" aria-label="Husky mascot">
+    <svg viewBox="0 0 150 150" role="img" aria-label="Cute cartoon husky">
+     <defs><linearGradient id="fur" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#f8fbff"/><stop offset="1" stop-color="#bfc9d8"/></linearGradient><linearGradient id="darkfur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#59657d"/><stop offset="1" stop-color="#303b53"/></linearGradient></defs>
+     <ellipse cx="75" cy="133" rx="39" ry="9" fill="#000" opacity=".18"/>
+     <path d="M34 57 22 10 Q20 3 28 8 L61 31 M116 57 128 10 Q130 3 122 8 L89 31" fill="url(#darkfur)" stroke="#26344c" stroke-width="2"/>
+     <path d="M35 42 30 18 53 37 M115 42 120 18 97 37" fill="#e6a9b4"/>
+     <path d="M23 67 Q20 26 75 22 Q130 26 127 67 Q128 111 75 120 Q22 111 23 67Z" fill="url(#fur)" stroke="#9eacbf" stroke-width="2"/>
+     <path d="M30 64 Q28 31 75 25 Q122 31 120 64 Q106 54 96 61 Q86 67 75 57 Q64 67 54 61 Q44 54 30 64Z" fill="url(#darkfur)"/>
+     <path d="M54 63 Q75 52 96 63 Q99 89 75 102 Q51 89 54 63Z" fill="#f7f8fa"/>
+     <ellipse cx="52" cy="76" rx="5" ry="7" fill="#1c293c"/><ellipse cx="98" cy="76" rx="5" ry="7" fill="#1c293c"/>
+     <circle cx="53.5" cy="73.5" r="1.7" fill="white"/><circle cx="99.5" cy="73.5" r="1.7" fill="white"/>
+     <ellipse cx="75" cy="88" rx="7" ry="5" fill="#263348"/><path d="M75 93 Q69 100 63 96 M75 93 Q81 100 87 96" fill="none" stroke="#596579" stroke-width="2" stroke-linecap="round"/>
+     <ellipse cx="42" cy="91" rx="8" ry="5" fill="#f0aeb6" opacity=".7"/><ellipse cx="108" cy="91" rx="8" ry="5" fill="#f0aeb6" opacity=".7"/>
+     <path d="M44 113 Q75 105 106 113 L112 142 Q75 153 38 142Z" fill="url(#darkfur)"/>
+     <path d="M63 112 Q75 124 87 112 L89 145 Q75 151 61 145Z" fill="#f6f8fb"/>
+     <ellipse cx="55" cy="137" rx="16" ry="9" fill="#77849a"/><ellipse cx="95" cy="137" rx="16" ry="9" fill="#77849a"/>
+     <path d="M46 137 Q55 132 64 137 M86 137 Q95 132 104 137" fill="none" stroke="#e9eef4" stroke-width="2"/>
+     <g class="paw-cover"><ellipse cx="53" cy="80" rx="16" ry="11" fill="#657188" stroke="#dce3eb" stroke-width="2" transform="rotate(-20 53 80)"/><ellipse cx="97" cy="80" rx="16" ry="11" fill="#657188" stroke="#dce3eb" stroke-width="2" transform="rotate(20 97 80)"/><path d="M43 77q-3-8 3-9m4 5q-2-8 4-9m39 13q3-8-3-9m-4 5q2-8-4-9" fill="none" stroke="#dce3eb" stroke-width="2" stroke-linecap="round"/></g>
+     <g class="sleep-eyes"><path d="M43 77q9 7 18 0m30 0q9 7 18 0" stroke="#27354b" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+    </svg>
+   </div>
+   <h1>Den</h1><p class="welcome" id="welcome">Welcome back. Your husky's keeping watch.</p>
+   <form id="loginForm">
+    <label class="field"><span>Username</span><input id="username" name="username" autocomplete="username" placeholder="Username" required></label>
+    <label class="field password-field"><span>Password</span><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Password" required><button type="button" class="eye" id="togglePassword" aria-label="Show password">◉</button></label>
+    <div class="options"><label class="remember"><input type="checkbox" id="remember"><span></span>Remember me</label><button type="button" class="link" id="forgot">Forgot password?</button></div>
+    <button class="sign-in" id="signIn" type="submit"><span class="btn-text">Sign in</span><span class="btn-mascot">♟</span><span class="btn-cube">▣</span><i class="spinner"></i></button>
+   </form>
+   <div class="or">or continue with</div>
+   <div class="social"><button type="button" id="google"><b class="google-g">G</b>Google</button><button type="button" id="apple"><b class="apple-mark">●</b>Apple</button></div>
+   <div class="signup">New to Den? <button type="button" id="create">Create account</button></div>
+   <div class="success-mark">✓</div>
+  </section>
+  <div class="message" id="message" aria-live="polite"></div>
+ </main>
+</div>
+<section class="source-preview">
+ <div class="src"><header><i class="html"></i>HTML <b>index.html</b></header><pre><span>&lt;form</span> id=<em>"loginForm"</em><span>&gt;</span>
+ &lt;input id=<em>"username"</em> required&gt;
+ &lt;input type=<em>"password"</em>&gt;
+ &lt;button&gt;Sign in&lt;/button&gt;
+&lt;/form&gt;</pre></div>
+ <div class="src"><header><i class="css"></i>CSS <b>styles.css</b></header><pre><em>.login-card</em> {
+ background: <strong>#171d2a</strong>;
+ border: 1px solid #30394a;
+ border-radius: 18px;
+ backdrop-filter: blur(18px);
+}</pre></div>
+ <div class="src"><header><i class="js"></i>JS <b>app.js</b></header><pre><em>form.addEventListener</em>(
+ 'submit', async (event) =&gt; {
+  event.preventDefault();
+  await signIn();
+ }
+);</pre></div>
+</section>
+<div class="footer">DEN　·　A LITTLE LOGIN EXPERIENCE</div>
+<div class="toast" id="toast"></div>
+<div class="modal-backdrop" id="modal"><section class="modal"><button class="close" id="closeModal">×</button><div id="modalContent"></div></section></div>
+<script src="app.js"></script></body></html>
